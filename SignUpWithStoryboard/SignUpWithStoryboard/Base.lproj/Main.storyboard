@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NYl-0d-dWr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SignUpWithStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="vlD-9d-khp">
+                                <rect key="frame" x="30" y="288" width="354" height="195"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LHR-YB-j7f">
+                                        <rect key="frame" x="113.5" y="0.0" width="127" height="32"/>
+                                        <segments>
+                                            <segment title="SignUp"/>
+                                            <segment title="SignIn"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sk7-dR-JeF">
+                                        <rect key="frame" x="12" y="53" width="330" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zsc-8c-94x">
+                                        <rect key="frame" x="12" y="109" width="330" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tm6-ll-a2e">
+                                        <rect key="frame" x="117" y="165" width="120" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="tsx-FC-zzq"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" title="Sign Up"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zsc-8c-94x" firstAttribute="leading" secondItem="vlD-9d-khp" secondAttribute="leading" constant="12" id="0yY-9K-p4e"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sk7-dR-JeF" secondAttribute="trailing" constant="12" id="Wse-Xc-B6S"/>
+                                    <constraint firstItem="Sk7-dR-JeF" firstAttribute="leading" secondItem="vlD-9d-khp" secondAttribute="leading" constant="12" id="bhm-Hg-Sw8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zsc-8c-94x" secondAttribute="trailing" constant="12" id="p5P-sG-9zM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vlD-9d-khp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="9d6-UD-lZe"/>
+                            <constraint firstItem="vlD-9d-khp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="XCS-he-5T8"/>
+                            <constraint firstItem="vlD-9d-khp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kuS-09-jN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vlD-9d-khp" secondAttribute="trailing" constant="30" id="vN2-GK-PSd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F07-0X-nw1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="No7-q8-ld4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NYl-0d-dWr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S2p-eI-F8h">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NuD-Kz-Jg3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b5R-Td-zuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
