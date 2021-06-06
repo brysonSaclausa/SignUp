@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum LoginType {
+    case signUp
+    case signIn
+}
+
 class EnterCredsViewController: UIViewController {
 
     override func viewDidLoad() {
